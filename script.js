@@ -19,11 +19,9 @@ const calculate = {
   },
 };
 
-let pBtn = document.getElementById("parenthesesBtn");
 let firstValue = 0;
 let operatorValue = "";
 let awaitingNextValue = false;
-let stack = [];
 
 inputBtns.forEach((inputBtn) => {
   if (inputBtn.classList.length === 0) {
@@ -58,7 +56,7 @@ function useOperator(operator) {
     operatorValue = operator;
     return;
   }
-  if (currentValue !== null && operatorValue === "/") {
+ if (operatorValue === "/" && currentValue === 0) {
     calcDisplay.textContent = `come here bro(⌐■_■)ノ🔪`;
     return;
   }
