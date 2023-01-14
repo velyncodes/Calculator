@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator Project</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <!-- Display Screen -->
+      <div class="displayScreen">
+        <div class="screen2" id="operationScreen2">
+          <h2></h2>
+        </div>
+        <div class="screen1" id="operationScreen1"><h1>0</h1></div>
+      </div>
+      <div class="calculator-btns">
+        <button id="clearBtn" value="clear">C</button>
+        <button id="deleteBtn">Del</button>
+        <button class="operator"></button>
+        <button class="operator" value="%"></button>
+        <button class="operator" value="EXP">EXP</button>
+        <button class="operator" value="/">÷</button>
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+        <button class="operator" value="*">×</button>
+        <button value="4">4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
+        <button class="operator" value="-">–</button>
+        <button value="1">1</button>
+        <button value="2">2</button>
+        <button value="3">3</button>
+        <button class="operator" value="+">+</button>
+        <button class="ghostBtn" value=""></button>
+        <button value="0">0</button>
+        <button class="decimal" value=".">.</button>
+        <button class="equal-sign operator" value="=">=</button>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Vienna O.
+      </p>
+      <a href="http://github.com/viennao" target="_blank"
+        ><img class="github" src="img/gh_logo.png" alt=""
+      /></a>
+    </footer>
+  </body>
+</html>
